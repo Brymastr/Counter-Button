@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,31 +11,32 @@
 
     <Button
         android:id="@+id/increment_button"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginBottom="128dp"
+        android:layout_width="250dp"
+        android:layout_height="3000dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:text="@string/increment" />
-    
+
     <TextView
         android:id="@+id/result_field"
         android:layout_width="@dimen/text_view_width"
-        android:textSize="@dimen/font_size"
-        android:gravity="center"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="90dp"
-        android:freezesText="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="59dp"
+        android:layout_toLeftOf="@+id/increment_button"
         android:ems="10"
-        android:inputType="none" />
+        android:freezesText="true"
+        android:gravity="center"
+        android:inputType="none"
+        android:textSize="@dimen/font_size" />
 
     <Button
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@+id/result_field"
         android:text="@string/reset" />
 
 </RelativeLayout>
