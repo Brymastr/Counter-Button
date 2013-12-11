@@ -25,7 +25,7 @@
         android:layout_marginRight="59dp"
         android:layout_toLeftOf="@+id/increment_button"
         android:ems="10"
-        android:freezesText="true"
+
         android:gravity="center"
         android:inputType="none"
         android:textSize="@dimen/font_size" />
